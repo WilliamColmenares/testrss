@@ -16,4 +16,4 @@ def get_news():
                 id=news_id,
                 title=rssnews['entries'][i].title,
                 # Here I user this regex to remove some html tags
-                content=re.sub('<[^<]+?>', '', rssnews['entries'][0].summary))
+                content=re.sub('<[^<]+?>', '', rssnews['entries'][i].summary))
